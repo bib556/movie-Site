@@ -1,0 +1,226 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+.popularMovies-wrapper{
+ height: 60vh;
+  width: 100vw;
+  background-color: black;
+  display:flex;
+  flex-direction:column;
+  position:relative;
+}
+.heading h2{
+    
+    position:relative;
+    flex:10%;
+    color:whitesmoke;
+}
+.heading h2::after{
+    content:" >";
+    position:absolute;
+    font-weight:bold;
+    top:3px;
+    left:180px;
+    color:white;
+   
+}
+.popularMovies {
+  height:90%;
+  display: flex;
+  overflow-x: auto;
+  gap: 12px;
+  padding: 10px;
+  scroll-behavior: smooth;
+  scrollbar-width:none;
+  -ms-overflow-style:none;
+}
+
+.popularMovies::-webkit-scrollbar {
+ display:none;
+}
+
+/* .popularMovies::-webkit-scrollbar-thumb {
+  background-color: rgba(65, 54, 106, 0.3);
+  border-radius: 10px;
+} */
+
+.popularCard {
+  height: 200px;
+  width: 200px;
+ flex: 0 0 auto;  /*  Important for horizontal layout */
+  border: 1px solid grey;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2),
+              0 6px 20px rgba(0, 0, 0, 0.19);
+              position:relative;
+              text-decoration:none;
+}
+.popularCard:hover{
+    border:2px solid white;
+
+}
+.scrollButtonLeft{
+    position:absolute;
+    z-index:1000;
+    top:160px;
+      width:30px;
+     height:30px;
+}
+.scrollButtonRight{
+    position:absolute;
+    width:30px;
+     height:30px;
+    top:160px;
+    right:0;
+}
+.popularCard img{
+    width:100%;
+    height:auto;
+    object-fit:cover;
+    border-radius:10px;
+    
+}
+.title{
+    color:white;
+}
+
+.currentMovies-wrapper{
+ height: 60vh;
+  width: 100vw;
+  background-color: black;
+  display:flex;
+  flex-direction:column;
+  position:relative;
+}
+.currentMovies{
+  height:90%;
+  display: flex;
+  overflow-x: auto;
+  gap: 12px;
+  padding: 10px;
+  scroll-behavior: smooth;
+  scrollbar-width:none;
+  -ms-overflow-style:none;
+  /* position:relative; */
+}
+
+.currentMovies::-webkit-scrollbar {
+ display:none;
+}
+.currentCard {
+  height: 200px;
+  width: 200px;
+ flex: 0 0 auto;  /*  Important for horizontal layout */
+  border: 1px solid grey;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2),
+              0 6px 20px rgba(0, 0, 0, 0.19);
+              position:relative;
+              text-decoration:none;
+}
+ .currentMovies .currentButtonLeft{
+    position:absolute;
+    z-index:1000;
+    top:160px;
+    width:30px;
+    height:30px;
+}
+.currentMovies .currentButtonRight{
+    position:absolute;
+    width:30px;
+    height:30px;
+    top:130px;
+    right:15px;
+    z-index:1000;
+}
+.heading1 h2{
+    color:white;
+}
+.heading1 h2::after{
+    content:" >";
+    position:absolute;
+    font-weight:bold;
+    top:3px;
+    left:145px;
+    color:white;
+   
+}
+
+.currentCard img{
+    width:100%;
+    height:auto;
+    object-fit:cover;
+    border-radius:10px;
+    
+}
+/* upComing */
+.upComing-wrapper{
+ height: 60vh;
+  width: 100vw;
+  background-color: black;
+  display:flex;
+  flex-direction:column;
+  position:relative;
+}
+.upComingMovies{
+  height:90%;
+  display: flex;
+  overflow-x: auto;
+  gap: 12px;
+  padding: 10px;
+  scroll-behavior: smooth;
+  scrollbar-width:none;
+  -ms-overflow-style:none;
+  /* position:relative; */
+}
+
+.upComingMovies::-webkit-scrollbar {
+ display:none;
+}
+.upComingCard {
+  height: 200px;
+  width: 200px;
+ flex: 0 0 auto;  /*  Important for horizontal layout */
+  border: 1px solid grey;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2),
+              0 6px 20px rgba(0, 0, 0, 0.19);
+              position:relative;
+              text-decoration:none;
+}
+ .upComingMovies .currentButtonLeft{
+    position:absolute;
+    z-index:1000;
+    top:160px;
+    width:30px;
+    height:30px;
+}
+.upComingMovies .currentButtonRight{
+    position:absolute;
+    width:30px;
+    height:30px;
+    top:130px;
+    right:15px;
+    z-index:1000;
+}
+.heading1 h2{
+    color:white;
+}
+.heading1 h2::after{
+    content:" >";
+    position:absolute;
+    font-weight:bold;
+    top:3px;
+    left:205px;
+    color:white;
+   
+}
+.upComingCard img{
+    width:100%;
+    height:auto;
+    object-fit:cover;
+    border-radius:10px;
+    
+}
